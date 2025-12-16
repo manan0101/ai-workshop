@@ -1,0 +1,27 @@
+[project]
+name = "ai-agent-workshop"
+version = "0.1.0"
+description = "AI Agent Workshop for Beginners"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai==1.6.1",
+<<<<<<< HEAD
+    "langchain",
+=======
+    "langchain>=0.3.27",
+>>>>>>> 8cc1316a77fb5ef57898eaa412dead92b6d67b68
+    "langchain-openai",
+    "langgraph",
+    "litellm==1.60.2",
+    "openai",
+    "python-dotenv",
+    "streamlit",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
